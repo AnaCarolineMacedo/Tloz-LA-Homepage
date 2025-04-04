@@ -15,30 +15,90 @@
 	}
 	
 	.container{
-		position: relative;
 		display: flex;
 		justify-content: center;
 	}
 	
 	.link-head{
-		width: 1320px;
-		margin-top: 40px;
+		width: 1400px;
+		margin-top: 60px;
+		margin-bottom: 50px;
 	}
 	
 	.menu{
+		font-family: 'Roboto', sans-serif;
 		margin: 0 auto;
 		display: flex;
 		justify-content: center;
-		margin-top: 40px;
-		gap: 150px;
+		margin-top: 20px;
+		gap: 90px;
 		color: white;
-		font-size: 15pt;
-		max-width: 1450px;
+		font-size: 18pt;
+		max-width: 1180px;
 		padding: 15px;
-		border-radius: 10px;
-		background-color: #0F1866;
+		border-radius: 15px;
+		background-color: rgba(15, 24, 102, 1.0);
 	}
 	
+	@font-face {
+		font-family: 'Roboto';
+		src: url('./fontes/Roboto-Normal.ttf') format('truetype');
+	}
+
+	.box{
+		position: relative;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		width: 1050px;
+		background-color: rgba(0, 0, 0, 0.2);
+		margin: 80 auto;
+		border-radius: 30px;
+		margin-top: 80px;
+	}
+	
+	.texto{
+		font-family: 'Roboto', sans-serif;
+		font-size: 16pt;
+		line-height: 1.5;
+		color: white;
+		max-width: 600px;
+		margin: 50px;
+	}
+	
+	.texto2{
+		font-family: 'Roboto', sans-serif;
+		font-size: 16pt;
+		line-height: 1.5;
+		color: white;
+		max-width: 600px;
+		margin: 50px;
+		margin-left: 400px;
+		text-align: right;
+	}
+	
+	.marin{
+		position: absolute;
+		max-height: 500px;
+		margin-top: -15px;
+		right: 40px;
+	}
+	
+	.mask{
+		position: absolute;
+		margin-bottom: 40px;
+		width: 100%;
+		height: 460px;
+		border-radius: 30px;
+		overflow: hidden;
+	}
+	
+	.owl{
+		position: absolute;
+		max-height: 520px;
+		margin-top: 0;
+		left: -100px;
+	}
 	
 </style>
 </head>
@@ -54,6 +114,35 @@
 		<div class="botao">Resenha</div>
 		<div class="botao">Link & Marin</div>
 	</div>
+	
+	<div class="box">
+		<p class="texto">Após os eventos de <b><i>A Link to the Past</i></b>, o conhecido e reverenciado herói Link parte em uma nova jornada pelo mar.
+		Porém, uma violenta tempestade o leva a naufragar nas águas turbulentas, e acaba desacordado em uma desconhecida
+		praia.
+
+		Porém, Marin, uma habitante da ilha Koholint, o encontra e o leva para sua vila, Mabe Village,
+		onde os habitantes recebem o herói com curiosidade e simpatia.<br>
+		
+		</br>Link descobre que, para deixar a ilha e
+		retornar ao seu mundo, ele precisa despertar a Baleia dos Ventos, uma entidade divina que dorme
+		no alto de uma montanha.</p>
+		
+		<img class="marin" src="./Images/marin.png">
+	</div>
+	
+	<div class="box">
+		<div class="mask">
+			<img class="owl" src="./Images/owl.png">
+		</div>
+		
+		<p class="texto2">No decorrer do jogo, uma coruja misteriosa aparece para<br>você
+		e diz que, para sair da ilha Koholint, é preciso coletar 8 Instrumentos Mágicos para acordar a Baleia
+		dos Ventos e assim, voltar para casa. Cada instrumento está guardado em uma masmorra e possui um som único, essencial para desvendar os segredos da ilha.
+		
+		<br>Ao reunir todos os instrumentos, Link toca a Balada dos Ventos, uma música poderosa que desperta a Baleia dos Ventos e revela a verdade por trás de Koholint, e finalmente,
+		consegue se despedir da ilha e seguir seu caminho.</p>
+	</div>
+	
 		
 </body>
 </html>
