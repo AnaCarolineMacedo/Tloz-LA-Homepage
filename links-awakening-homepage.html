@@ -6,10 +6,12 @@
 	<link rel="icon" type="favicon" href="">
 	
 <style>
+	html{
+		scroll-behavior: smooth;
+	}
 	body{
 		background-image: url('./Images/bg-2.png');
 		background-repeat: no-repeat;
-		background-attachment: scroll;
 		background-position: fixed;
 		background-size: 100%;
 	}
@@ -21,7 +23,7 @@
 	
 	.link-head{
 		width: 1350px;
-		margin-top: 60px;
+		margin-top: 55px;
 		margin-bottom: 50px;
 	}
 	
@@ -73,7 +75,7 @@
 		width: 1100px;
 		background-color: rgba(0, 0, 0, 0.2);
 		margin: 0 auto;
-		margin-top: 110px;
+		margin-top: 90px;
 		margin-bottom: 110px;
 		border-radius: 30px;
 	}
@@ -174,16 +176,48 @@
 		color: white;
 		text-shadow: 0px 0px 10px #00C6E1;
 	}
-
+	
+	.resenha{
+		font-family: 'Roboto', sans-serif;
+		font-size: 20pt;
+		color: white;
+		display: flex;
+		justify-content: center;
+		text-align: center;
+		margin: auto;
+		padding: 10px;
+		margin-top: 100px;
+		background-color: #000080;
+	}
+	
+	.botao{
+		color: white;
+		text-decoration: none;
+		transition-duration: 0.2s;
+	}
+	
+	.botao:hover{
+		color: #000080;
+	}
+	
+	#section1{
+		scroll-behavior: smooth;
+		scroll-margin-top: 200px;
+	}
+	
+	#section2{
+		scroll-behavior: smooth;
+		scroll-margin-top: 200px;
+	}
 </style>
 </head>
 <body>
 	<div class="menu">
-		<div>◀ Sobre ▶</div>
-		<div>◀ Os instrumentos ▶</div>
-		<div>◀ Personagens ▶</div>
-		<div>◀ Resenha ▶</div>
-		<div>◀ Link & Marin ▶</div>
+		<a href="#section1" class="botao">◀ Sobre ▶</a>
+		<a href="#section2" class="botao">◀ Os instrumentos ▶</a>
+		<a href="#" class="botao">◀ Personagens ▶</a>
+		<a href="#" class="botao">◀ Resenha ▶</a>
+		<a href="#" class="botao">◀ Link & Marin ▶</a>
 	</div>
 	
 	<div class="container">
@@ -191,10 +225,9 @@
 	</div>
 	
 	<div class="box1">
-		<p class="texto">Após os eventos de <b><i>A Link to the Past</i></b>, o conhecido e <br>reverenciadoherói Link parte em uma nova jornada pelo mar.
+		<p id="section1" class="texto">Após os eventos de <b><i>A Link to the Past</i></b>, o conhecido e <br>reverenciadoherói Link parte em uma nova jornada pelo mar.
 		Porém, uma violenta tempestade o leva a naufragar nas águas turbulentas, e acaba desacordado em uma desconhecida
-		praia.
-
+		praia. 
 		Porém, Marin, uma habitante da ilha Koholint, o encontra e o leva para sua vila, Mabe Village,
 		onde os habitantes recebem o herói com curiosidade e simpatia.<br>
 		
@@ -210,7 +243,7 @@
 		
 		<img class="eight" src="./Images/instrumentos.png">
 		
-		<p class="texto2">
+		<p id="section2" class="texto2">
 		No decorrer do jogo, uma coruja misteriosa aparece para você
 		e diz que, para sair da ilha Koholint, é preciso coletar 8 Instrumentos Mágicos para acordar a Baleia
 		dos Ventos e assim, voltar para casa. 
@@ -219,6 +252,8 @@
 		Ao reunir todos os instrumentos, Link toca a Balada dos Ventos, uma música poderosa que desperta a Baleia dos Ventos e revela a verdade por trás de Koholint, e finalmente,
 		consegue se despedir da ilha e seguir seu caminho.</p>
 	</div>
+	
+	<div class="resenha">Resenha</div>
 	
 	<div class="box3">
 		<div class="mask">
